@@ -22,7 +22,7 @@ public class weatherPoemApp {
                 JsonObject response = rootObj.getAsJsonObject("response");
                 JsonObject body = response.getAsJsonObject("body");
                 JsonObject items = body.getAsJsonObject("items");
-                JsonArray itemArray = items.getAsJsonArray("item"); // 날씨 요소들이 들어있는 배열
+                JsonArray itemArray = items.getAsJsonArray("item"); 
 
                 // 2. 배열 루프를 돌며 필요한 카테고리만 매칭
                 for (JsonElement element : itemArray) {
