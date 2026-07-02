@@ -55,7 +55,7 @@ public class geminiService {
                 // 429 한도 초과 에러 발생 시 구글의 에러메세지 출력
                 if (responseCode == 429) {
                     System.out.println("\n-------------------------------------------------------");
-                    System.out.println("⚠️ 구글 서버가 요청을 거절했습니다(429). 상세 원인을 분석합니다...");
+                    System.out.println("구글 서버가 요청을 거절했습니다(429). 상세 원인을 분석합니다...");
 
                     // 에러 스트림(Error Stream)을 열어 구글이 보낸 JSON 에러 메시지를 읽어옴
                     try (BufferedReader eb = new BufferedReader(new InputStreamReader(conn.getErrorStream(), "utf-8"))) {
