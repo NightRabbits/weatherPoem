@@ -16,13 +16,13 @@ repositories {
 }
 
 dependencies {
-    // 1. LangChain4j - Gemini(제미나이) 연동 엔진
+    //LangChain4j - Gemini(제미나이) 연동 엔진
     implementation 'dev.langchain4j:langchain4j-google-ai-gemini:0.36.2'
 
-    // 2. 기상청 API의 JSON 데이터를 자바 객체로 파싱하는 Jackson 라이브러리
+    //기상청 API의 JSON 데이터를 자바 객체로 파싱하는 Jackson 라이브러리
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.2'
 
-    // 3. 내부 실행 로그를 콘솔창에 깔끔하게 출력하기 위한 로깅 라이브러리
+    //내부 실행 로그를 콘솔창에 깔끔하게 출력하기 위한 로깅 라이브러리
     implementation 'org.slf4j:slf4j-simple:2.0.16'
 
     implementation 'com.google.code.gson:gson:2.11.0'
