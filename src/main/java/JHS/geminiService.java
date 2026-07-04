@@ -24,7 +24,7 @@ public class geminiService {
 
         for (int attempt = 1; attempt <= maxRetries; attempt++) {
             try {
-                String urlStr = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=" + GEMINI_API_KEY;
+                String urlStr = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY;
                 URL url = new URL(urlStr);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
